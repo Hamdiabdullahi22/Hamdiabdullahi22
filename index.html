@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML 5 Boilerplate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<div class="modal" id="popup">
+  <p><b>Thanks for leaving a recommendation.</b></p>
+  <button onclick="hideModal()">Ok</button>
+</div>
+
+<button class="arrow" onclick="gotoHome()">
+  <img src="image/home_icon.png" alt="homearrow">
+</button>
+
+<body>
+
+  <div class="page">
+    <div class="container navbar">
+      <div class="info">
+        <h1>Hamdi Abdullahi</h1>
+        <span class="infolabel">
+          <img class="manImg" src="image/email.png"></img>
+          hamdi.abdullahi@gmail.com
+        </span>
+        <span class="infolabel">
+          <img class="manImg" src="image/phone.png"></img>
+          +123456789232
+        </span>
+      </div>
+
+      <div class="nav">
+        <ul>
+          <li><a href="#about" class="navlink">About Me</a></li>
+          <li><a href="#skills" class="navlink">Skills</a></li>
+          <li><a href="#projects" class="navlink">Projects</a></li>
+          <li><a href="#recommendations" class="navlink">Recommendations</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <div class="main">
+      <header id="about">
+        <img class="profilepic" src="image/profilepic.png">
+        <div class="content">
+          <h1>Hi, I'm Hamdi Abdullahi! 👋</h1>
+          <p>I possess three years of experience as a full stack developer, proficient in handling both application and
+            presentation layers. During this time, I have been involved in developing applications and microservices
+            deployed on the IBM Cloud. My expertise extends to being a dedicated user of IBM Watson Services, and I have
+            actively worked on projects involving OpenAI Assistant, NLU, Sentiment Analyzer, AWS, and among others.</p>
+        </div>
+
+      </header>
+
+
+      <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="content">
+
+          <div class="skillbox">
+            <img src="image/skill_html5.png"><br>
+            <span class="skill-name">HTML</span><br>
+            <span class="xp">2 years experience</span>
+          </div>
+
+          <div class="skillbox">
+            <img src="image/skill_js.png"><br>
+            <span class="skill-name">JavaScript</span><br>
+            <span class="xp">1.5 years experience</span>
+          </div>
+
+          <div class="skillbox">
+            <img src="image/skill_java.png"><br>
+            <span class="skill-name">HTML</span><br>
+            <span class="xp">0.5 years experience</span>
+          </div>
+
+          <div class="skillbox">
+            <img src="image/skill_react.png"><br>
+            <span class="skill-name">React</span><br>
+            <span class="xp">1 years experience</span>
+          </div>
+
+
+          <div class="skillbox">
+            <img src="image/skill_nodejs.png"><br>
+            <span class="skill-name">Node.js</span><br>
+            <span class="xp">1 year experience</span>
+          </div>
+
+
+          <div class="skillbox">
+            <img src="image/skill_css.png"><br>
+            <span class="skill-name">CSS</span><br>
+            <span class="xp">2 years experience</span>
+          </div>
+
+        </div>
+      </section>
+
+
+      <br><br>
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="content">
+          <b>Chatbot-Integrated Website</b>
+          <li>Designed and developed a secure website for a client, incorporating an advanced chatbot powered by HTML, CSS, JavaScript, and OpenAI. Implemented a seamless integration of the IBM Watson Assistant chatbot to enhance user interactions and provide real-time assistance.</li>
+          <hr>
+
+          <b>Sentiment Analyzer</b>
+          <li>Successfully created and implemented a sentiment analyzer on an eCommerce platform's box reviews section, utilizing IBM technology for deployment.</li>
+          <hr>
+
+          <b>AWS Website</b>
+          <li>Utilized AWS Lambda and API Gateway to build serverless backend services, reducing operational overhead and ensuring cost-effectiveness.</li>
+
+        </div>
+
+
+      </section>
+
+      <section id="recommendations">
+        <h2>Recommendations</h2>
+
+        <div id="recom-list" class="content">
+
+          <div class="recom-box">
+            <span class="quote">“</span>
+            Hamdi is an exceptional learner, swiftly mastering the fundamental principles of Web development. With an
+            outstanding attitude and an ability to collaborate seamlessly within a team, he is an invaluable asset.
+            Hamdi's inquisitive nature leads him to ask insightful questions that contribute to the team's success.
+            Moreover, he consistently takes the initiative and demonstrates the potential to lead the team to greater
+            heights.<span class="quote">”</span>
+          </div>
+
+          <div class="recom-box">
+            <span class="quote">“</span>
+            Working alongside Hamdi has been an incredible experience. He possesses an impressive depth of knowledge and
+            consistently goes above and beyond to ensure perfection in every aspect. His expertise is unmatched, and for
+            any forthcoming projects requiring his skill set, I would undoubtedly choose to collaborate with him again.
+            <span class="quote">”</span>
+          </div>
+
+          <div class="recom-box">
+            <span class="quote">“</span>
+            During the initial phase of our venture, I had the privilege of working with Hamdi, who played a pivotal
+            role in our Web development efforts. His dedication and commitment to the project were commendable, and his
+            profound expertise in the domain proved invaluable. Undoubtedly, Hamdi's presence would be an asset to any
+            organization fortunate enough to have him on board. <span class="quote">”</span>
+          </div>
+        </div>
+
+
+        <div class="recom-submit">
+
+          <div class="inputs">
+            <h3>Leave a Recommendation</h3>
+            <input type="text" id="name" placeholder="Name (Optional)">
+            <textarea id="message" placeholder="Message"></textarea>
+          </div>
+          <button type="button" onclick="addRecommendation()">Submit</button>
+        </div>
+      </section>
+
+
+    </div>
+
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+
+
+
+</html>
